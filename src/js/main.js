@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('username').addEventListener('input', function () {
         const username = this.value;
         // regex to check if username has atleast 1 capital letter, 1 special character, 1 number and is atleast 8 characters long
-        const regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        const regex = /^(?=.[A-Z])(?=.\d)(?=.[@$!%*?&~])[A-Za-z\d@$!%*?&~]{8,}$/;
         if (regex.test(username)) {
             // set the username input border to green
             this.style.borderColor = 'green';
